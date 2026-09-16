@@ -29,15 +29,14 @@ a:focus-visible,.scroll:focus-visible{outline:2px solid var(--accent);outline-of
 .wrap{max-width:660px;margin:0 auto;padding:0 22px}
 
 header{display:flex;justify-content:space-between;align-items:center;
-       padding:24px 0 20px;border-bottom:1px solid var(--line)}
+       padding:20px 0 16px;border-bottom:1px solid var(--line)}
 .brand{display:flex;align-items:center;gap:12px;color:var(--ink)}
 .mark{width:34px;height:26px;display:block;flex:none}
 .wordmark{font:700 13px/1 "SF Mono",ui-monospace,Menlo,monospace;letter-spacing:.34em}
 header>a{font:600 11px/1 "SF Mono",ui-monospace,Menlo,monospace;letter-spacing:.12em;
         text-transform:uppercase;color:var(--muted);text-decoration:none;
-        padding:14px 0 14px 14px;margin:-14px 0 -14px -14px;
-        border-bottom:1px solid transparent;transition:.2s}
-header>a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+        padding:12px 0 12px 12px;transition:color .2s}
+header>a:hover{color:var(--accent)}
 
 .hero{animation:rise .7s cubic-bezier(.2,.7,.3,1) both}
 @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
@@ -133,7 +132,7 @@ footer{margin-top:14px;padding-top:16px;border-top:1px solid var(--band-line);
 <div class="hero">
 <h1>Declare the outcome.<br>We own the loop.</h1>
 <p class="sub">Telic builds AI that moves a business to a declared state —
-and holds it there.</p>
+and holds&nbsp;it&nbsp;there.</p>
 
 <a class="scroll" href="#story">Scroll<span class="a">&darr;</span></a>
 </div>
