@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nanominds — AI that owns outcomes, not tasks</title>
+<meta name="description" content="Nanominds builds AI that moves a business to a declared state — and holds it there. Declare the outcome; we own the loop.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nanominds — AI that owns outcomes, not tasks">
+<meta property="og:description" content="Declare the outcome. We own the loop.">
+<meta property="og:url" content="https://nanominds.ai/">
+<meta property="og:image" content="https://nanominds.ai/assets/launch.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://nanominds.ai/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 26'%3E%3Cline x1='0' y1='13' x2='14' y2='13' stroke='%23191817' stroke-width='2.6'/%3E%3Ccircle cx='22' cy='13' r='10' fill='none' stroke='%23191817' stroke-width='2.6'/%3E%3Ccircle cx='22' cy='13' r='4' fill='%231f4fd8'/%3E%3C/svg%3E">
+<style>
+:root{--bg:#faf9f7;--ink:#191817;--muted:#6f6a63;--line:#e4e0d8;--accent:#1f4fd8;
+      --amber:#a54c07;--band:#141a2e;--band-ink:#ece7db;--band-line:#2a3350;
+      --band-muted:#8d94ab;--band-amber:#e0a458}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:18.5px/1.68 "Iowan Old Style",Georgia,
+     "Times New Roman",serif}
+::selection{background:var(--accent);color:#fff}
+a:focus-visible,.scroll:focus-visible{outline:2px solid var(--accent);outline-offset:3px;
+     border-radius:2px}
+.wrap{max-width:660px;margin:0 auto;padding:0 22px}
+
+header{display:flex;justify-content:space-between;align-items:center;
+       padding:24px 0 20px;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:12px;color:var(--ink)}
+.mark{width:34px;height:26px;display:block;flex:none}
+.wordmark{font:700 13px/1 "SF Mono",ui-monospace,Menlo,monospace;letter-spacing:.26em}
+header>a{font:600 11px/1 "SF Mono",ui-monospace,Menlo,monospace;letter-spacing:.12em;
+        text-transform:uppercase;color:var(--muted);text-decoration:none;
+        padding-bottom:2px;border-bottom:1px solid transparent;transition:.2s}
+header>a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+
+.hero{animation:rise .7s cubic-bezier(.2,.7,.3,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+h1{font-size:clamp(34px,6vw,46px);line-height:1.16;font-weight:500;margin:72px 0 22px;
+   letter-spacing:-.01em;text-wrap:balance}
+.sub{font-size:19px;color:var(--muted);font-style:italic;max-width:52ch;text-wrap:pretty}
+.scroll{display:inline-block;font:600 10px/1 "SF Mono",ui-monospace,Menlo,monospace;
+        letter-spacing:.3em;text-transform:uppercase;color:var(--muted);margin:44px 0 0;
+        text-decoration:none;cursor:pointer;transition:color .2s}
+.scroll .a{display:inline-block;margin-left:6px;animation:nudge 1.6s ease-in-out infinite}
+.scroll:hover{color:var(--accent)}
+@keyframes nudge{0%,100%{transform:translateY(0)}50%{transform:translateY(3px)}}
+
+.rule{border:none;border-top:1px solid var(--line);margin:60px 0 0}
+section{margin-top:54px}
+section p{margin:19px 0;text-wrap:pretty}
+
+figure{margin:38px 0}
+figure img{width:100%;height:auto;display:block;border-radius:6px;
+           border:1px solid var(--line);filter:grayscale(1) contrast(1.05)}
+figcaption{font:11.5px/1.7 "SF Mono",ui-monospace,Menlo,monospace;color:var(--amber);
+           margin-top:10px}
+figcaption span{color:var(--muted)}
+
+h2{font:600 12px/1.4 "SF Mono",ui-monospace,Menlo,monospace;letter-spacing:.16em;
+   text-transform:uppercase;color:var(--muted);margin-bottom:22px}
+.work{list-style:none;padding:0}
+.work li{font:14px/1.6 "SF Mono",ui-monospace,Menlo,monospace;padding:13px 2px;
+         border-bottom:1px solid var(--line);display:flex;gap:16px;transition:.2s}
+.work li:first-child{border-top:1px solid var(--line)}
+.work li:hover{background:#fff;padding-left:8px;padding-right:0}
+.work .n{color:var(--accent);font-weight:700}
+
+.band{background:var(--band);color:var(--band-ink);margin-top:84px}
+.band .wrap{padding-top:60px;padding-bottom:34px}
+.band .mark{color:var(--band-ink);opacity:.9;margin-bottom:34px}
+.coda p{font-size:23px;line-height:1.5;font-style:italic;text-wrap:pretty}
+.contact{margin-top:52px;padding-top:28px;border-top:1px solid var(--band-line)}
+.contact p{font-size:19px;text-wrap:pretty}
+.contact a,.band footer a{color:var(--band-amber);text-decoration:none;
+   background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;
+   transition:background-size .3s}
+.contact a:hover,.band footer a:hover{background-size:100% 1px}
+.bigmark{margin-top:76px;font:700 clamp(38px,10vw,84px)/1 "SF Mono",ui-monospace,Menlo,monospace;
+         letter-spacing:.12em;color:rgba(255,255,255,.055);user-select:none}
+footer{margin-top:14px;padding-top:16px;border-top:1px solid var(--band-line);
+       font:12px/1.7 "SF Mono",ui-monospace,Menlo,monospace;color:var(--band-muted)}
+
+/* progressive scroll-driven reveals (Chrome/Edge; harmless elsewhere) */
+@supports (animation-timeline: view()) {
+  figure,.work li,.coda p{animation:rise .7s cubic-bezier(.2,.7,.3,1) both;
+    animation-timeline:view();animation-range:entry 0% entry 55%}
+}
+@media (prefers-reduced-motion:reduce){
+  .hero,.scroll .a,figure,.work li,.coda p{animation:none}
+  html{scroll-behavior:auto}
+}
+@media print{
+  .band{background:none;color:var(--ink)}
+  .band .wrap{padding-top:20px}
+  .bigmark,.scroll{display:none}
+  .contact a{color:var(--ink)}
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+<header>
+  <div class="brand"><svg class="mark" viewBox="0 0 34 26" aria-hidden="true"><line x1="0" y1="13" x2="14" y2="13" stroke="currentColor" stroke-width="2.2"/><circle cx="22" cy="13" r="10" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="22" cy="13" r="3.6" fill="#1f4fd8"/></svg><div class="wordmark">NANOMINDS</div></div>
+  <a href="mailto:omer@nanominds.ai">Write to us</a>
+</header>
+
+<div class="hero">
+<h1>Declare the outcome.<br>We own the loop.</h1>
+<p class="sub">Nanominds builds AI that moves a business to a declared state —
+and holds it there.</p>
+
+<a class="scroll" href="#story">Scroll<span class="a">&darr;</span></a>
+</div>
+
+<hr class="rule" id="story">
+
+<section>
+  <p>Intelligence has become abundant. Results have not. With every model release, the gap
+  between what AI can do and what organizations get done grows wider. The bottleneck is no
+  longer capability — it is how work is organized: goals broken into tasks, tasks handed to
+  tools, tools supervised by people. Throughput stays capped by human attention.</p>
+
+  <p>This has happened before. In 1961, the most famous outcome in history was declared in a
+  single sentence — a target, a guardrail, and a deadline: land a man on the Moon, and return
+  him safely, before the decade is out. The rocket that would do it had not yet been
+  designed. What made the sentence
+  come true was the machinery built around it: rooms that watched the true state of the
+  mission, corrected course continuously, and knew exactly when to go, when to wait, and when
+  to abort. Four hundred thousand people, reorganized around one declared state.</p>
+
+  <figure>
+    <img src="assets/launch.jpg" alt="Saturn V lifting off on July 16, 1969"
+         width="1115" height="1400" fetchpriority="high" decoding="async">
+    <figcaption>One declared sentence moved 400,000 people.
+    <span>— July 16, 1969. NASA, public domain.</span></figcaption>
+  </figure>
+
+  <p>We organize work around <b>outcomes</b> instead. An operator declares a target and its
+  limits — <i>cut churn to five percent while customer satisfaction holds</i> — and the
+  system runs the loop: measure, act, verify, undo what fails. Continuously, for months.
+  Less copilot, more mission control.</p>
+
+  <p>Owning an outcome is not the same as completing tasks. The system must hold a goal
+  through weeks of noise. It must ground every action in the true state of the organization,
+  not a dashboard&rsquo;s version of it. It must learn the constraints nobody wrote down.
+  And it must know when to act, when to wait, and when to undo.</p>
+
+  <figure>
+    <img src="assets/mission.jpg" alt="Apollo 11 Mission Control during the lunar surface EVA"
+         width="1400" height="923" loading="lazy" decoding="async">
+    <figcaption>The loop that made the sentence come true.
+    <span>— Mission Control, July 1969. NASA, public domain.</span></figcaption>
+  </figure>
+
+  <p>When outcomes become the interface, people stop translating goals into tasks. Those who
+  know the work declare what must become true, and the system does the rest — the breaking
+  down, the doing, the checking. The organizations that pull ahead will be the ones that
+  reorganize this way first. That is how abundant intelligence becomes abundant results.</p>
+
+  <p>We obsess over realized value, not benchmarks.
+  <b>We are paid when the number moves.</b></p>
+</section>
+
+<section>
+  <h2>What we work on</h2>
+  <ul class="work">
+    <li><span class="n">01</span>Outcome loops that run unattended for months</li>
+    <li><span class="n">02</span>Harnesses that build, deploy, and improve their own agents</li>
+    <li><span class="n">03</span>Grounding every action in the true state of an organization</li>
+    <li><span class="n">04</span>Learning from every outcome — credit assignment over long, noisy trajectories</li>
+    <li><span class="n">05</span>Guardrails as code, rollback as reflex</li>
+  </ul>
+</section>
+</div>
+
+<div class="band">
+<div class="wrap">
+  <svg class="mark" viewBox="0 0 34 26" aria-hidden="true"><line x1="0" y1="13" x2="14" y2="13" stroke="currentColor" stroke-width="2.2"/><circle cx="22" cy="13" r="10" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="22" cy="13" r="3.6" fill="#1f4fd8"/></svg>
+  <div class="coda">
+    <p>The intelligence is here. What&rsquo;s missing is the loop that turns it into
+    results. We are building that loop. More soon.</p>
+  </div>
+  <div class="contact">
+    <p>If you own a number and want it moved — or if you want to spend your career on this
+    problem — <a href="mailto:omer@nanominds.ai">write to us</a>.</p>
+  </div>
+  <div class="bigmark" aria-hidden="true">NANOMINDS</div>
+  <footer>© 2026 Nanominds ·
+  Photographs: NASA, public domain · No cookies, no tracking</footer>
+</div>
+</div>
+
+</body>
+</html>
