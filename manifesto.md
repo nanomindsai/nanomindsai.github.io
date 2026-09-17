@@ -17,10 +17,10 @@ industry was the harness that held it to a declared state.
 
 We organize work around **outcomes**, not tasks. An operator declares a target and its
 limits — *cut churn to five percent while customer satisfaction holds* — and the
-system runs the harness: measure, act, verify, undo what fails. Continuously, for months.
+harness runs: measure, act, verify, undo what fails. Continuously, for months.
 Less copilot, more mission control.
 
-Owning an outcome is not the same as completing tasks. The system must hold a goal
+Owning an outcome is not the same as completing tasks. The harness must hold a goal
 through weeks of noise. It must ground every action in the true state of the organization,
 not a dashboard's version of it. It must learn the constraints nobody wrote down.
 And it must know when to act, when to wait, and when to undo.
