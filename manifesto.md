@@ -39,12 +39,6 @@ Realized value, not benchmarks. **We are paid when the number moves.**
 4. Learning from every outcome — credit assignment over long, noisy trajectories
 5. Guardrails as code, rollback as reflex
 
-## From the running harness
-    2026-09-17 09:57 UTC   VERIFY   found a claim with no source in the brief
-    2026-09-17 09:57 UTC   UNDO     rejected it · brief restored to the last verified state
-    2026-09-17 09:57 UTC   VERIFY   every claim traces to a source · in declared state
-It keeps Telic's research brief: no claim without a source. Unedited.
-
 The intelligence is here. What's missing is the harness that turns it into results.
 We are building that harness. It is already running.
 

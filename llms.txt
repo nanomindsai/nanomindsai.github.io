@@ -23,7 +23,7 @@ not dollars per task.
 ## Positioning
 - Less copilot, more mission control.
 - The bottleneck is no longer model capability; it is how work is organized. Harness quality, not model choice, is the measured bottleneck.
-- Telic's harness already runs on Telic's own outcomes; its ledger, including rollbacks, is on the landing page.
+- Telic's harness already runs on Telic's own outcomes; its ledger, including a real rollback, is available on request.
 
 ## Evidence (harness engineering, 2025-2026)
 - Anthropic, "Effective harnesses for long-running agents" (Nov 26, 2025): initializer agents, clean-state handoffs; names "declaring victory" as a failure mode. https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents
