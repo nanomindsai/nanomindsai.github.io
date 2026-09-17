@@ -27,6 +27,7 @@ not dollars per task.
 
 ## Pages
 - [Manifesto](https://nanominds.ai/): the full argument, from Watt's governor to outcomes as the interface.
+- [Manifesto, markdown mirror](https://nanominds.ai/manifesto.md): same text, agent-friendly.
 
 ## Contact
 If you own a number and want it moved: omer@nanominds.ai
