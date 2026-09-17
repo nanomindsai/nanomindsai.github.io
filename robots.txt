@@ -1,3 +1,32 @@
 User-agent: *
 Allow: /
+
+# AI / agentic crawlers are welcome. Read /llms.txt for a machine-readable summary.
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: Bytespider
+Allow: /
+User-agent: Amazonbot
+Allow: /
+User-agent: FirecrawlAgent
+Allow: /
+
 Sitemap: https://nanominds.ai/sitemap.xml

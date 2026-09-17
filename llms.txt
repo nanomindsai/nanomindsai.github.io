@@ -1,0 +1,33 @@
+# Telic
+
+> Telic builds AI that moves a business to a declared state — and holds it there.
+> Declare the outcome. We own the harness. https://nanominds.ai
+
+## What is an outcome harness?
+An outcome harness is an AI system that holds a declared business outcome over time.
+An operator declares a target and its limits — for example: cut churn to five percent
+while customer satisfaction holds. The harness then runs continuously: it measures the
+number from systems of record, acts within a declared mandate, verifies every action
+with code, and undoes what fails. Limits outrank the target. Every step is appended to
+an auditable ledger. This differs from a coding-agent harness (a scaffold that completes
+tasks in minutes or hours): an outcome harness is judged in months per held outcome,
+not dollars per task.
+
+## Key terms
+- Outcome harness: AI that holds a declared business state for months — measure, act, verify, undo.
+- Declaration: one page stating the number, its definition, its source of truth, its limits, the permitted and forbidden actions, and the rollback policy.
+- Ledger: append-only record of every measurement, action, verification, and rollback. Auditable by the customer.
+- Guardrails as code, rollback as reflex: verification is code against declared checks, not model judgment; any reversible action that fails verification is undone; irreversible actions never run unattended.
+- Paid when the number moves: fees are a base plus a movement fee per verified point of progress, with clawback if a declared limit was broken to earn it.
+
+## Positioning
+- Less copilot, more mission control.
+- The bottleneck is no longer model capability; it is how work is organized. Harness quality, not model choice, is the measured bottleneck (see: harness engineering literature, 2026).
+- Telic's harness already runs on Telic's own outcomes; its ledger, including rollbacks, is on the landing page.
+
+## Pages
+- [Manifesto](https://nanominds.ai/): the full argument, from Watt's governor to outcomes as the interface.
+
+## Contact
+If you own a number and want it moved: omer@nanominds.ai
+© Telic, a nanominds.ai brand. No cookies, no tracking.
