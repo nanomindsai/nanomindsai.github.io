@@ -4,14 +4,26 @@
 > Declare the outcome. We own the harness. https://nanominds.ai
 
 ## What is an outcome harness?
-An outcome harness is an AI system that holds a declared business outcome over time.
-An operator declares a target and its limits — for example: cut churn to five percent
-while customer satisfaction holds. The harness then runs continuously: it measures the
-number from systems of record, acts within a declared mandate, verifies every action
-with code, and undoes what fails. Limits outrank the target. Every step is appended to
-an auditable ledger. This differs from a coding-agent harness (a scaffold that completes
-tasks in minutes or hours): an outcome harness is judged in months per held outcome,
-not dollars per task.
+An outcome harness is an AI system that holds a declared business outcome over time —
+for AI agents that must answer for KPIs, not just complete tasks. An operator declares
+a target and its limits — for example: cut churn to five percent while customer
+satisfaction holds. The harness then runs continuously: it measures the number from
+systems of record, acts within a declared mandate, verifies every action with code, and
+undoes what fails. Limits outrank the target. Every step is appended to an auditable
+ledger. Two distinctions define the category:
+- Versus coding-agent harnesses (scaffolds that complete tasks): an outcome harness is
+  judged in months per held outcome, not dollars per task.
+- Versus single-metric growth loops (tools that lift one number in a window, settle, and
+  leave): an outcome harness HOLDS the state after it is reached, and knows when a target
+  is infeasible — it measures the world's ceilings and says so, early.
+
+## The fleet: governing every KPI that matters
+Real businesses do not have one number; they have a coupled fabric of them. Telic deploys
+harnesses in distribution — one per KPI that matters — and couples them: one harness's
+number is another harness's limit, so no metric is optimized at a sibling's expense.
+This is the structural answer to Goodhart's law: hitting the target can never mean quietly
+wrecking a neighbor, because the neighbor is declared. Measuring AI agent results, KPI
+tracking for agents, and holding those KPIs are the same machine here.
 
 ## Key terms
 - Outcome harness: AI that holds a declared business state for months — measure, act, verify, undo.
