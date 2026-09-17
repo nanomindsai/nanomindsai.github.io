@@ -47,8 +47,12 @@ header>a:hover{color:var(--accent)}
       min-height:calc(100svh - 118px);display:flex;flex-direction:column}
 @supports not (height:100svh){.hero{min-height:calc(100vh - 150px)}}
 @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
-h1{font-size:clamp(38px,6.5vw,56px);line-height:1.14;font-weight:500;margin:auto 0;
-   letter-spacing:-.01em;text-wrap:balance}
+h1{font-size:clamp(44px,8.2vw,88px);line-height:1.12;font-weight:500;margin:auto 0;
+   letter-spacing:-.015em;text-wrap:balance}
+.device{align-self:center;margin:0 0 9svh;opacity:.85}
+.device svg{width:72px;height:auto;display:block}
+.device .cap{font:600 9px/1 "SF Mono",ui-monospace,Menlo,monospace;letter-spacing:.32em;
+  color:var(--muted);text-align:center;margin-top:12px}
 .scroll{display:inline-block;align-self:flex-start;font:600 10px/1 "SF Mono",ui-monospace,Menlo,monospace;
         letter-spacing:.3em;text-transform:uppercase;color:var(--muted);
         margin:0 0 26px;padding:12px 14px 12px 0;
@@ -150,6 +154,10 @@ footer{margin-top:14px;padding-top:16px;border-top:1px solid var(--band-line);
 
 <div class="hero">
 <h1>Declare the outcome.<br>We own the harness.</h1>
+<div class="device" aria-hidden="true">
+  <svg viewBox="0 0 34 26"><line x1="0" y1="13" x2="14" y2="13" stroke="#191817" stroke-width="1.6"/><circle cx="22" cy="13" r="10" fill="none" stroke="#191817" stroke-width="1.6"/><circle cx="22" cy="13" r="3.4" fill="#1f4fd8"/></svg>
+  <div class="cap">EST. MMXXVI</div>
+</div>
 <a class="scroll" href="#story">Scroll<span class="a">&darr;</span></a>
 </div>
 
