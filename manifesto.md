@@ -15,7 +15,8 @@ the machine holds it, through every change of load, with no one watching. Mills 
 finally run machinery that demanded steadiness. The power was already there; what made it
 industry was the harness that held it to a declared state.
 
-We organize work around **outcomes**, not tasks. An operator declares a target and its
+We organize work around **outcomes**, not tasks. Every number that matters gets its
+harness; their limits interlock. An operator declares a target and its
 limits — *cut churn to five percent while customer satisfaction holds* — and the
 harness runs: measure, act, verify, undo what fails. Continuously, for months.
 Less copilot, more mission control.
