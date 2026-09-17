@@ -22,8 +22,15 @@ not dollars per task.
 
 ## Positioning
 - Less copilot, more mission control.
-- The bottleneck is no longer model capability; it is how work is organized. Harness quality, not model choice, is the measured bottleneck (see: harness engineering literature, 2026).
+- The bottleneck is no longer model capability; it is how work is organized. Harness quality, not model choice, is the measured bottleneck.
 - Telic's harness already runs on Telic's own outcomes; its ledger, including rollbacks, is on the landing page.
+
+## Evidence (harness engineering, 2025-2026)
+- Anthropic, "Effective harnesses for long-running agents" (Nov 26, 2025): initializer agents, clean-state handoffs; names "declaring victory" as a failure mode. https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents
+- LangChain, "Improving Deep Agents with harness engineering" (Feb 17, 2026): +13.7 points on Terminal-Bench 2.0 with the model fixed — only the harness changed. https://www.langchain.com/blog/improving-deep-agents-with-harness-engineering
+- Zhang et al., "Stop Comparing LLM Agents Without Disclosing the Harness" (arXiv:2605.23950, May 2026): same-model swings up to ~48 points across harnesses.
+- OpenAI, "Harness engineering" (Feb 11, 2026): the discipline named. https://openai.com/index/harness-engineering/
+- Telic's reading of this literature: task harnesses are judged in dollars per task; an outcome harness is judged in months per held outcome.
 
 ## Pages
 - [Manifesto](https://nanominds.ai/): the full argument, from Watt's governor to outcomes as the interface.
