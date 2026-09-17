@@ -1,7 +1,5 @@
 # Declare the outcome. We own the harness.
 
-*Telic builds AI that moves a business to a declared state — and holds it there.*
-
 Intelligence has become abundant. Results have not. With every model release, the gap
 between what AI can do and what organizations get done widens. The bottleneck is no
 longer capability — it is how work is organized: goals broken into tasks, tasks handed to
