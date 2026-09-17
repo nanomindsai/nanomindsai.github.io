@@ -42,6 +42,7 @@ tracking for agents, and holding those KPIs are the same machine here.
 - LangChain, "Improving Deep Agents with harness engineering" (Feb 17, 2026): +13.7 points on Terminal-Bench 2.0 with the model fixed — only the harness changed. https://www.langchain.com/blog/improving-deep-agents-with-harness-engineering
 - Zhang et al., "Stop Comparing LLM Agents Without Disclosing the Harness" (arXiv:2605.23950, May 2026): same-model swings up to ~48 points across harnesses.
 - OpenAI, "Harness engineering" (Feb 11, 2026): the discipline named. https://openai.com/index/harness-engineering/
+- Business-outcome benchmarks have arrived (Business Arena, Aug 2026; E-Commerce Bench): agents are now scored on realistic market operations and P&L-like results — the demand side of outcome harnesses, measured.
 - Telic's reading of this literature: task harnesses are judged in dollars per task; an outcome harness is judged in months per held outcome.
 
 ## Pages
