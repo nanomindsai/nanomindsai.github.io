@@ -38,7 +38,7 @@ Realized value, not benchmarks. **We are paid when the number moves.**
 4. Learning from every outcome — credit assignment over long, noisy trajectories
 5. Guardrails as code, rollback as reflex
 
-The intelligence is here. What's missing is the harness that turns it into results.
+The intelligence is here. What's missing is the adaptive harness that turns it into results.
 We are building that harness. More soon.
 
 If you own a number and want it moved — or if you want to spend your career on this
