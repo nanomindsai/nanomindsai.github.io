@@ -261,7 +261,7 @@ and holds&nbsp;it&nbsp;there.</p>
     while(hist.length<w)hist.unshift(target);while(hist.length>w)hist.shift();}
   addEventListener('resize',size);
   function y(val){var H=c.height;return H*0.94-(val/100)*H*0.88}
-  function step(){v+=(Math.random()-.5)*1.15;v+=(target-v)*0.035;v=Math.max(-8,Math.min(108,v));
+  function step(){v+=(Math.random()-.5)*1.8;v+=(target-v)*0.035;v=Math.max(-8,Math.min(108,v));
     hist.push(v);if(hist.length>c.width/DPR)hist.shift()}
   function draw(){var W=c.width,H=c.height;x.clearRect(0,0,W,H);
     x.lineWidth=1*DPR;x.strokeStyle=LINE;
