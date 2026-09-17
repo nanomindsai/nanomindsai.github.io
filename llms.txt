@@ -33,7 +33,6 @@ not dollars per task.
 - Telic's reading of this literature: task harnesses are judged in dollars per task; an outcome harness is judged in months per held outcome.
 
 ## Pages
-- [The governor, interactive](https://nanominds.ai/#governor): declare a number, disturb it, watch it held — the product's control loop in miniature.
 - [Manifesto](https://nanominds.ai/): the full argument, from Watt's governor to outcomes as the interface.
 - [Manifesto, markdown mirror](https://nanominds.ai/manifesto.md): same text, agent-friendly.
 
