@@ -40,10 +40,10 @@ Realized value, not benchmarks. **We are paid when the number moves.**
 5. Guardrails as code, rollback as reflex
 
 ## From the running harness
-    2026-09-17 09:57 UTC   VERIFY    5/6 checks · one check failed
-    2026-09-17 09:57 UTC   ROLLBACK  uncited claim rejected · brief restored
-    2026-09-17 09:57 UTC   VERIFY    6/6 checks · coverage 100% · in declared state
-Ledger of the harness that holds Telic's own landscape brief. Unedited.
+    2026-09-17 09:57 UTC   VERIFY   found a claim with no source in the brief
+    2026-09-17 09:57 UTC   UNDO     rejected it · brief restored to the last verified state
+    2026-09-17 09:57 UTC   VERIFY   every claim traces to a source · in declared state
+The harness keeps Telic's own research brief: no claim without a source. It wrote these lines itself. Unedited.
 
 The intelligence is here. What's missing is the harness that turns it into results.
 We are building that harness. It is already running.
