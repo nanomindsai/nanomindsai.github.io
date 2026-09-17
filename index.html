@@ -77,6 +77,22 @@ h2{font:600 12px/1.4 "SF Mono",ui-monospace,Menlo,monospace;letter-spacing:.16em
 .work li:hover{background:#fff;padding-left:8px;padding-right:0}
 .work .n{color:var(--accent);font-weight:700}
 
+.gov{border:1px solid var(--line);background:#fffefb;border-radius:6px;padding:14px 14px 6px}
+.govbar{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;
+  font:600 11px/1 "SF Mono",ui-monospace,Menlo,monospace;letter-spacing:.14em;color:var(--muted)}
+.govbar input{font:600 15px "SF Mono",ui-monospace,Menlo,monospace;color:var(--ink);width:64px;
+  border:none;border-bottom:1px solid var(--line);background:none;padding:2px 0;margin-left:8px}
+.govbar input:focus{outline:none;border-bottom-color:var(--accent)}
+.govbar button{font:600 11px/1 "SF Mono",ui-monospace,Menlo,monospace;letter-spacing:.18em;
+  color:var(--ink);background:none;border:1px solid var(--line);border-radius:3px;
+  padding:9px 14px;cursor:pointer;transition:.2s}
+.govbar button:hover{border-color:var(--amber);color:var(--amber)}
+.govread{margin-left:auto}
+.govread b{color:var(--ink);font-size:15px;letter-spacing:0}
+#gcanvas{display:block;width:100%;height:150px;margin-top:10px}
+.govnote{font:11.5px/1.7 "SF Mono",ui-monospace,Menlo,monospace;color:var(--amber);margin-top:10px;text-wrap:pretty}
+.govnote span{color:var(--muted)}
+
 .band{background:var(--band);color:var(--band-ink);margin-top:84px}
 .band .wrap{padding-top:60px;padding-bottom:34px}
 .band .mark{color:var(--band-ink);opacity:.9;margin-bottom:34px}
@@ -103,6 +119,8 @@ footer{margin-top:14px;padding-top:16px;border-top:1px solid var(--band-line);
   section p{margin:16px 0}
   figure{margin:28px 0}
   .work li{padding:12px 2px;font-size:13px}
+  .govbar{gap:12px}
+  .govread{margin-left:0}
   figcaption{font-size:10.5px}
   .band .wrap{padding-top:46px;padding-bottom:28px}
   .coda p{font-size:20px}
@@ -213,6 +231,61 @@ and holds&nbsp;it&nbsp;there.</p>
     <li><span class="n">04</span>Learning from every outcome — credit assignment over long, noisy trajectories</li>
     <li><span class="n">05</span>Guardrails as code, rollback as reflex</li>
   </ul>
+</section>
+
+<section id="governor">
+  <h2>Try the governor</h2>
+  <div class="gov">
+    <div class="govbar">
+      <label>DECLARED<input id="gtarget" type="number" value="50" min="0" max="100" step="1" aria-label="declared target"></label>
+      <button id="gdisturb" type="button">DISTURB</button>
+      <span class="govread">ACTUAL <b id="gactual">50.0</b> &nbsp;<span id="gstate" style="color:var(--accent)">HELD</span></span>
+    </div>
+    <canvas id="gcanvas" height="300" aria-hidden="true"></canvas>
+  </div>
+  <p class="govnote">Declare a number. Disturb it. Watch it held.
+  <span>The same loop, run on a business number, is the product.</span></p>
+</section>
+
+<script>
+(function(){
+  var c=document.getElementById('gcanvas');if(!c||!c.getContext)return;
+  var x=c.getContext('2d'),DPR=Math.min(window.devicePixelRatio||1,2);
+  var target=50,v=50,hist=[],running=true,slow=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var css=getComputedStyle(document.documentElement);
+  var INK=css.getPropertyValue('--ink').trim()||'#191817',
+      ACC=css.getPropertyValue('--accent').trim()||'#1f4fd8',
+      AMB=css.getPropertyValue('--amber').trim()||'#a54c07',
+      LINE=css.getPropertyValue('--line').trim()||'#e4e0d8';
+  function size(){var w=c.clientWidth;c.width=w*DPR;c.height=150*DPR;
+    while(hist.length<w)hist.unshift(target);while(hist.length>w)hist.shift();}
+  addEventListener('resize',size);
+  function y(val){var H=c.height;return H*0.94-(val/100)*H*0.88}
+  function step(){v+=(Math.random()-.5)*1.15;v+=(target-v)*0.035;v=Math.max(-8,Math.min(108,v));
+    hist.push(v);if(hist.length>c.width/DPR)hist.shift()}
+  function draw(){var W=c.width,H=c.height;x.clearRect(0,0,W,H);
+    x.lineWidth=1*DPR;x.strokeStyle=LINE;
+    [25,50,75].forEach(function(g){x.beginPath();x.moveTo(0,y(g));x.lineTo(W,y(g));x.stroke()});
+    x.strokeStyle=ACC;x.setLineDash([4*DPR,5*DPR]);x.lineWidth=1.2*DPR;
+    x.beginPath();x.moveTo(0,y(target));x.lineTo(W,y(target));x.stroke();x.setLineDash([]);
+    x.strokeStyle=INK;x.lineWidth=1.7*DPR;x.beginPath();
+    for(var i=0;i<hist.length;i++){var px=W-(hist.length-i)*DPR;
+      i?x.lineTo(px,y(hist[i])):x.moveTo(px,y(hist[i]))}
+    x.stroke();
+    document.getElementById('gactual').textContent=v.toFixed(1);
+    var held=Math.abs(v-target)<3,st=document.getElementById('gstate');
+    st.textContent=held?'HELD':'CORRECTING';st.style.color=held?ACC:AMB}
+  var frame=0;
+  function loop(){if(running&&(!slow||++frame%5===0)){step();draw()}requestAnimationFrame(loop)}
+  document.getElementById('gtarget').addEventListener('input',function(){
+    var t=parseFloat(this.value);if(!isNaN(t))target=Math.max(0,Math.min(100,t))});
+  document.getElementById('gdisturb').addEventListener('click',function(){
+    v+=(Math.random()<.5?-1:1)*(16+Math.random()*12)});
+  if('IntersectionObserver' in window)
+    new IntersectionObserver(function(e){running=e[0].isIntersecting},{threshold:0.05}).observe(c);
+  size();for(var i=0;i<hist.length;i++)hist[i]=50+(Math.random()-.5)*2;draw();loop();
+})();
+</script>
 </div>
 
 <div class="band" id="end">
