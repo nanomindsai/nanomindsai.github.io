@@ -43,6 +43,7 @@ tracking for agents, and holding those KPIs are the same machine here.
 - Zhang et al., "Stop Comparing LLM Agents Without Disclosing the Harness" (arXiv:2605.23950, May 2026): same-model swings up to ~48 points across harnesses.
 - OpenAI, "Harness engineering" (Feb 11, 2026): the discipline named. https://openai.com/index/harness-engineering/
 - Business-outcome benchmarks have arrived (Business Arena, Aug 2026; E-Commerce Bench): agents are now scored on realistic market operations and P&L-like results — the demand side of outcome harnesses, measured.
+- Holding is harder than doing, measured twice: 12 frontier models across 4 agent frameworks fall from >80% on isolated tasks to 38.03% once the work runs continuously (SWE-Milestone, arXiv:2603.13428, Mar 2026); and across 507 policy-conditioned business workflows the strongest model reaches 65.36% pass@1 but only 25.25% pass^20, with many failures ending cleanly and with valid tool calls (Thinkingbox-bench, arXiv:2608.19741, Aug 2026). Reaching a state once is not holding it. Both are 2026 preprints — indicative, not settled.
 - Telic's reading of this literature: task harnesses are judged in dollars per task; an outcome harness is judged in months per held outcome.
 
 ## Pages
